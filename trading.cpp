@@ -29,30 +29,6 @@ public:
 		transactions.push_back({ "Deposit:", money });
 	}
 
-	// Get account Details
-	void Get_account_information()
-	{
-
-		cout << "Money Details:\n";
-		cout << "Bank Balance:" << balance << endl;
-		cout << "Dogecoin:" << dogecoin << endl;
-		cout << "Bitcoin:" << bitcoin << endl;
-	}
-
-	// Withdraw Cash
-	bool Withdraw(int money)
-	{
-		if (money > balance) {
-			return false;
-		}
-
-		withdraw += money;
-		balance -= money;
-		transactions.push_back({ "Withdraw:", money });
-		return true;
-	}
-
-	// Buy Crypto function
 	
 int main()
 {
